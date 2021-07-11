@@ -9,9 +9,10 @@ interface CoffeeMachineInterface {
   outlets: number;
 }
 
-const prepareTime = 5000;
+const prepareTime = 5000; // in ms
 const THRESHOLD_QUANTITY = 20;
 
+// After completion, state of that outlet will be released, and message will be displayed
 function handleCompletion(
   outlet: number,
   beverageName: string,
@@ -34,6 +35,7 @@ export default class CoffeeMachine implements CoffeeMachineInterface {
     this.outlets = outlets;
     this.state = new Array(outlets);
     this.configFile = file;
+    // State is to maintain current state of all the outlets
     for (let i = 0; i < this.state.length; i += 1) {
       this.state[i] = false;
     }
@@ -61,6 +63,7 @@ export default class CoffeeMachine implements CoffeeMachineInterface {
     return beverages[name];
   };
 
+  // To find the outlet that is free to prepare next beverage
   GetFreeOutlet = (): number => {
     for (let i = 0; i < this.state.length; i += 1) {
       if (!this.state[i]) {

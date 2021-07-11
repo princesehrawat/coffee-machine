@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 import fs from 'fs';
 import BeverageItem from './beverages';
 import IngredientItem from './ingredients';
