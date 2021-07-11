@@ -1,0 +1,52 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.probe": ["javascript", "typescript", "html", "markdown", "json"],
+  "eslint.validate": ["json", "javascript", "typescript"],
+  "javascript.validate.enable": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+  },
+  "todohighlight.keywords": [
+    "FIXME:",
+    {
+      "text": "TODO:",
+      "color": "#ffffff",
+      "backgroundColor": "#d88304",
+      "isWholeLine": false
+    },
+    {
+      "text": "BUG:",
+      "color": "#ffffff",
+      "backgroundColor": "#d9363e",
+      "isWholeLine": false
+    },
+    {
+      "text": "HACK:",
+      "color": "#ffffff",
+      "backgroundColor": "#096dd9",
+      "isWholeLine": false
+    },
+    {
+      "text": "NOTE:",
+      "color": "#ffffff",
+      "backgroundColor": "#3e7921",
+      "isWholeLine": false
+    }
+  ],
+  "git.ignoreLimitWarning": true
+}
